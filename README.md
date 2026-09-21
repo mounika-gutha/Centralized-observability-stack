@@ -35,6 +35,38 @@ The project uses a Kubernetes-based observability architecture.
 | Helm | Deploys monitoring components |
 | GitHub Actions | Automates testing and validation |
 
+## 📸 Project Screenshots
+
+### 📊 Grafana Dashboard
+
+The Grafana dashboard displays application metrics, including request counts, request rates, and application availability.
+
+![Grafana Dashboard](docs/ss/grafana-dashboard.png)
+
+### 🎯 Prometheus Targets
+
+Prometheus successfully discovers and monitors the Flask application through a ServiceMonitor.
+
+![Prometheus Targets](docs/ss/prometheus-targets.png)
+
+### 📝 Centralized Logs with Loki
+
+Loki collects Kubernetes application logs, which can be searched and viewed through Grafana Explore.
+
+![Loki Logs](docs/ss/loki-logs.png)
+
+### 🚨 Prometheus Alerting
+
+The project includes an alert rule to identify application availability issues.
+
+![Prometheus Alert](docs/ss/prometheus-alert.png)
+
+### ⚙️ GitHub Actions CI
+
+GitHub Actions automates application testing and Kubernetes YAML validation.
+
+![GitHub Actions](docs/ss/github-actions.png)
+
 ℹ️ Project Overview
 
 I developed this project to gain practical experience with application monitoring, centralized logging, and Kubernetes observability.
