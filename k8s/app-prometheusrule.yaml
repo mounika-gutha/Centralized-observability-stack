@@ -1,0 +1,16 @@
+apiVersion: monitoring.coreos.com/v1
+kind: PrometheusRule
+metadata:
+  name: observability-demo-alerts
+  namespace: observability
+  labels: {release: monitoring}
+spec:
+  groups:
+  - name: observability-demo.rules
+    rules:
+    - alert: ObservabilityDemoDown
+      expr: up{service="observability-demo"} == 0
+      for: 1m
+      labels: {severity: critical}
+      annotations:
+        summary: Observability demo target is down
