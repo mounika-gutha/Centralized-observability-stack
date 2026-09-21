@@ -1,11 +1,11 @@
- Centralized Observability Stack
+## Centralized Observability Stack
 [![CI](https://github.com/mounika-gutha/centralized-observability-stack/actions/workflows/ci.yml/badge.svg)](https://github.com/mounika-gutha/centralized-observability-stack/actions/workflows/ci.yml)
 
 A Kubernetes-based monitoring and logging project built to understand how applications can be monitored, analyzed, and managed in a containerized environment.
 
 This project integrates **Prometheus, Grafana, Loki, Promtail, Alertmanager, Helm, and GitHub Actions** to provide application monitoring, centralized logging, visualization, and CI automation.
 
- 🌟 Highlights
+### 🌟 Highlights
 
 - 🚀 Deployed a Flask application on a local Kubernetes cluster using Kind.
 - 📊 Collected application metrics using Prometheus.
@@ -15,18 +15,19 @@ This project integrates **Prometheus, Grafana, Loki, Promtail, Alertmanager, Hel
 - ⚙️ Used Helm to deploy and manage monitoring components.
 - 🔄 Implemented GitHub Actions for automated testing and Kubernetes YAML validation.
 
- 🏗️ Architecture
+### 🏗️ Architecture
 
 The project uses a Kubernetes-based observability architecture.
 
 ![Architecture Diagram](docs/architecture.png)
 
- Main Components
+### Main Components
 
 | Component | Purpose |
 |---|---|
 | Flask | Demo application |
-| Kubernetes (Kind) | Runs and manages the application |
+| 
+Kubernetes (Kind) | Runs and manages the application |
 | Prometheus | Collects application metrics |
 | Grafana | Visualizes metrics and logs |
 | Promtail | Collects application logs |
@@ -67,7 +68,7 @@ GitHub Actions automates application testing and Kubernetes YAML validation.
 
 ![GitHub Actions](docs/ss/github-actions.png)
 
-ℹ️ Project Overview
+### ℹ️ Project Overview
 
 I developed this project to gain practical experience with application monitoring, centralized logging, and Kubernetes observability.
 
@@ -77,7 +78,7 @@ Grafana connects to Prometheus and Loki to provide a centralized view of applica
 
 GitHub Actions is used to automate application testing and Kubernetes YAML validation whenever changes are pushed or a pull request is created.
 
-🔄 Project Workflow
+### 🔄 Project Workflow
 
  1. Application Deployment
 
@@ -122,7 +123,7 @@ The CI pipeline:
 - Runs application tests.
 - Validates Kubernetes YAML files.
 
- 🛠️ Technologies Used
+### 🛠️ Technologies Used
 
 - Python
 - Flask
@@ -138,7 +139,7 @@ The CI pipeline:
 - Git
 - Linux / Ubuntu WSL
 
- 📁 Project Structure
+### 📁 Project Structure
 
 ```text
 centralized-observability-stack/
@@ -174,7 +175,7 @@ centralized-observability-stack/
 └── README.md
 ```
 
- 🧪 Testing
+### 🧪 Testing
 
 The project includes application tests and automated CI validation.
 
@@ -186,7 +187,7 @@ The tests verify:
 
 GitHub Actions runs these checks and validates Kubernetes YAML configuration files.
 
- 📚 Learning Outcomes
+### 📚 Learning Outcomes
 
 Through this project, I gained practical experience in:
 
@@ -199,7 +200,7 @@ Through this project, I gained practical experience in:
 - Automating testing with GitHub Actions.
 - Working with Git branches and pull requests.
 
- 🚀 Future Improvements
+### 🚀 Future Improvements
 
 - Add application performance dashboards.
 - Configure external alert notifications.
@@ -207,7 +208,7 @@ Through this project, I gained practical experience in:
 - Add more application-level alerting rules.
 - Improve CI/CD with automated deployment stages.
 
- 👩‍💻 Author
+### 👩‍💻 Author
 
 **Mounika Gutha**
 
@@ -216,6 +217,6 @@ Specialization: Artificial Intelligence and Machine Learning
 
 Interested in DevOps, MLOps, Kubernetes, CI/CD, and cloud technologies.
 
- 📄 License
+### 📄 License
 
 This project was created for learning and practical experience in Kubernetes observability and DevOps practices.
