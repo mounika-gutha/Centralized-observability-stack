@@ -35,3 +35,15 @@ jobs:
       - name: Run tests
         run: |
           pytest tests/ -v
+      - name: Validate Kubernetes YAML
+        run: |
+          pip install pyyaml
+          python - <<'PY'
+          import yaml
+          from pathlib import Path
+
+          for file in Path("k8s").glob("*.yaml"):
+              with open(file) as f:
+                  list(yaml.safe_load_all(f))
+              print(f"Validated: {file}")
+          PY
