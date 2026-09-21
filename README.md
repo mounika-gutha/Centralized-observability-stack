@@ -1,5 +1,5 @@
-
  Centralized Observability Stack
+[![CI](https://github.com/mounika-gutha/centralized-observability-stack/actions/workflows/ci.yml/badge.svg)](https://github.com/mounika-gutha/centralized-observability-stack/actions/workflows/ci.yml)
 
 A Kubernetes-based monitoring and logging project built to understand how applications can be monitored, analyzed, and managed in a containerized environment.
 
